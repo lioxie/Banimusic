@@ -33,12 +33,12 @@ Disk: {disk}%"""
 async def ping(_, message):
     start = datetime.now()
     response = await message.reply_photo(
-        photo="https://telegra.ph/file/337b17b83116ec2aaec1a.jpg",
+        photo="https://telegra.ph/file/53fe57f4df9d6aa50e5d4.jpg",
         caption=">> Hi danger !",
     )
     uptime = await bot_sys_stats()
     end = datetime.now()
     resp = (end - start).microseconds / 1000
     await response.edit_text(
-        f"**Hi how are you!**\n`⚡{resp} ms`\n\n<b><u>{MUSIC_BOT_NAME} System Stats:</u></b>{uptime}"
+        f"**Welcome to world !**\n`⚡{resp} ms`\n\n<b><u>{MUSIC_BOT_NAME} System Stats:</u></b>{uptime}"
     )
