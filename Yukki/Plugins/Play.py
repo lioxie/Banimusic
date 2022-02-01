@@ -167,7 +167,7 @@ async def play(_, message: Message):
                 message.from_user.first_name, message.from_user.id, "abcd"
             )
             await message.reply_photo(
-                photo="Utils/Playlist.jpg",
+                photo="https://telegra.ph/file/6d12558e80d4907022312.jpg",
                 caption=(
                     "**Usage:** /play [Music Name or Youtube Link or Reply to Audio]\n\nIf you want to play Playlists! Select the one from Below."
                 ),
