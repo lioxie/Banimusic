@@ -41,7 +41,7 @@ __HELP__ = """
 @PermissionCheck
 @AssistantAdd
 async def play_playlist_cmd(_, message):
-    thumb = "Utils/Playlist.jpg"
+    thumb = "https://telegra.ph/file/c03556f5062e2115592be.jpg"
     await message.delete()
     if not message.reply_to_message:
         if len(message.command) == 2:
