@@ -60,7 +60,7 @@ async def gstats(_, message):
         pass
     uptime = await bot_sys_stats()
     response = await message.reply_photo(
-        photo="https://telegra.ph/file/f40ad564efb9c76549cd6.jpg", caption="Getting Stats!"
+        photo="https://telegra.ph/file/fab90999acd368c248f09.jpg", caption="Getting Stats!"
     )
     end = datetime.now()
     resp = (end - start).microseconds / 1000
@@ -245,7 +245,7 @@ async def stats_markup(_, CallbackQuery):
             async for i in ASS_CLI_1.iter_dialogs():
                 t = i.chat.type
                 total_ub += 1
-                if t in ["supergroup", "group"]:
+                if t in ["supergroupo", "group"]:
                     groups_ub += 1
                 elif t == "channel":
                     channels_ub += 1
